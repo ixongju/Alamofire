@@ -279,7 +279,7 @@ extension EventMonitor {
 
 /// An `EventMonitor` which can contain multiple `EventMonitor`s and calls their methods on their queues.
 public final class CompositeEventMonitor: EventMonitor {
-    public let queue = DispatchQueue(label: "org.alamofire.componsiteEventMonitor", qos: .background)
+    public let queue = DispatchQueue(label: "org.alamofire.compositeEventMonitor", qos: .background)
 
     let monitors: [EventMonitor]
 
